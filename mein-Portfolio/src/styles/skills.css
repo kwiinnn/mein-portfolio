@@ -1,0 +1,49 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill .label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.bar {
+  height: 10px;
+  background: var(--glass);
+  border-radius: 999px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-2), #4f46e5);
+  transition: width 0.6s ease;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    gap: 10px;
+  }
+
+  .skill .label {
+    font-size: 12px;
+  }
+
+  .bar {
+    height: 8px;
+    margin-top: 6px;
+  }
+}

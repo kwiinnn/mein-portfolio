@@ -1,0 +1,57 @@
+.certs-header {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certs-container {
+  padding: 20px;
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 14px 0;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.back {
+  display: inline-block;
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 30px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+.back:hover {
+  background: rgba(99, 102, 241, 0.05);
+  transform: translateX(-4px);
+}
+
+html.dark .back {
+  color: var(--accent-2);
+}
+
+@media (max-width: 768px) {
+  .certs-header {
+    padding: 30px 16px;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .certs-container {
+    padding: 16px;
+  }
+}
